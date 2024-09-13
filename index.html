@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path and Shareable Link Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabsheera's Unique Path and Shareable Link Resume Builder</h1>
+
+    <form id="resumeForm">
+
+        <fieldset id="profile-picture">
+         <legend>Profile Picture</legend>
+         <label for="profile-picture-input">Upload Profile Picture</label>
+         <input type="file" id="profile-picture-input" accept="image/*">
+         <br>
+         <img id="profile-picture-preview" alt="profile picture preview" style="display: none; width: 150px; height: 150px; border-radius: 50%; margin-top: 10px;">
+        </fieldset>
+
+       <fieldset>
+        <legend>Personal Informaion</legend>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+
+         <label for="name">Name</label>
+         <input type="text" id="name" required>
+         <br>
+
+         <label for="email">Email</label>
+         <input type="email" id="email" required>
+         
+         <label for="phone">Phone</label>
+         <input type="tel" id="phone" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>  
+        <label for = "degree">Degree</label>
+        <input type="text" id="degree" required>
+        <br>
+        <label for = "institution">Institution</label>
+        <input type="text" id="institution" required>
+         <br>
+        <label for = "graduationYear">Year of Graduation</label>
+        <input type="number" id="graduationYear" required>
+        <br>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>Work Experience</legend>
+        <label for="jobTitle">Job Title</label>
+        <input type="text" id="jobTitle">
+        <br>
+        <label for="company">Company</label>
+        <input type="text" id="company">
+        <br>
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate">
+        <br>
+        <label for="endDate">End Date</label>
+        <input type="date" id="endDate">
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <textarea id="skills" placeholder="Write your skills" rows="4"></textarea>
+    </fieldset>
+    
+    <button type="submit">Generate Resume</button>
+    </form>
+
+    <section id="resume-preview" style="display: none;">
+        <img id="resume-profile-picture"  alt="profile profile Preview" style="width: 150px; height: 150px; border-radius: 50%; margin-top: 10px;">
+        <h3 id="resume-name"  contenteditable="true">Name:</h3>
+        <p id="resume-email" contenteditable="true">Email:</p>
+        <p id="resume-phone"  contenteditable="true">Phone:</p>
+
+
+        <h4>Education</h4>
+        <p id="resume-degree" contenteditable="true">Degree:</p>
+        <p id="resume-institution" contenteditable="true">Institution:</p>
+        <p id="resume-graduationYear" contenteditable="true">Year of Graduation:</p>
+
+        <h4>Work Experience</h4>
+        <p id="resume-jobTitle"  contenteditable="true">Job Title:</p>
+        <p id="resume-company"  contenteditable="true">Company:</p>
+        <p id="resume-startDate"  contenteditable="true">Start Date:</p>
+        <p id="resume-endDate"  contenteditable="true">End Date:</p>
+
+        <h4>Skills</h4>
+        <p id="resume-skills"  contenteditable="true">Skills:</p>
+    </section>
+    
+    <br>
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>Share Your Resume With Others</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+
+    </div>
+    <footer>
+      <p>Powered by Tabsheera Shakeel🤍</p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
